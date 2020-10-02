@@ -1,0 +1,75 @@
+@font-face{
+    font-family: "Dosis";
+    src: url(../fonts/Dosis.ttf) format("truetype");
+}
+html {
+    height: 100%;
+    background-image: linear-gradient(to top, #000000,rgba(0, 0, 0, 0.575)), url("../img/backgroundMain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    height: 95%;
+}
+
+* {
+    font-family: Dosis;
+    color: #ffffff;
+}
+.h1Style{
+    color: #ffffff;
+    text-align:center;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(0,0,0,0), rgb(141, 141, 141), rgba(0,0,0,0));
+}
+
+.pContainer{
+    display: flex;
+    flex-flow: column;
+    margin-left: 10%;
+}
+
+.social_div{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.social_logos{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;   
+    filter: brightness(0) invert(1); 
+    opacity: 1;
+        transition: opacity .35s ease-in-out;
+    transform: translate(0, 0px);
+        transition: .35s ease-in; 
+}
+
+ul li{
+    transform: translate(0px,0);
+        transition: .35s ease-in;
+}
+
+ul li:hover{
+    transform: translate(20px,0);
+        transition: .35s ease-in;
+}
+
+
+.social_logos:hover{
+    opacity: 0.5;
+        transition: opacity .35s ease-in-out;
+    transform: translate(0, -20px);
+        transition: .35s ease-in;
+}
+
+.socialLogoAndText{
+    position:relative;
+}
+
+#main_content{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 95%;
+}
