@@ -32,7 +32,7 @@ body{
 .social_div{
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .social_div .logos{
     filter: brightness(0) invert(1); 
@@ -108,3 +108,7 @@ ul li:hover{
     flex-wrap:wrap;
 }
 
+#main_content p{
+    font-size: 125%;
+    align-self: center;
+}
